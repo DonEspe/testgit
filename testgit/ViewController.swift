@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var labelOutlet: UILabel!
+    
+    var count = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func pressBlah(_ sender: Any)
+        
+    {
+        count += 1
+        labelOutlet.text = "count: " + String(count)
+        
+    }
 
 }
 
